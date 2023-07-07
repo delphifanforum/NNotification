@@ -9,7 +9,8 @@ Create an instance of TNNotification with your OneSignal API key and app ID.
 Call the SendNotification method, providing the title and message for the notification.
 Here's an example usage:
 ```
->uses
+```
+uses
   NNotification;
 
 procedure TForm1.Button1Click(Sender: TObject);
@@ -23,4 +24,12 @@ begin
     Notifier.Free;
   end;
 end;
+```
+```
+Remember to replace 'YOUR_API_KEY' and 'YOUR_APP_ID' with your actual OneSignal API key and app ID.
 
+This library provides a basic implementation for sending push notifications using the OneSignal service. 
+You can further enhance it by adding additional parameters to the SendNotification method, such as icons, 
+buttons, or targeting specific devices or user segments. Refer to the OneSignal API documentation for
+more information on available options and parameters.
+```
